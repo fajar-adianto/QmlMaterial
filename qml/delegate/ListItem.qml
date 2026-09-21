@@ -23,8 +23,7 @@ T.ItemDelegate {
     icon.width: 24
     icon.height: 24
 
-    required property int index
-    required property var model
+    property int index: 0
 
     property int leftMargin: 0
     property int rightMargin: 0
@@ -111,6 +110,7 @@ T.ItemDelegate {
                     MD.Text {
                         width: parent.width
                         text: control.text
+                        color: control.mdState.textColor
                         font: control.font
                         elide: control.elide
                         wrapMode: control.wrapMode

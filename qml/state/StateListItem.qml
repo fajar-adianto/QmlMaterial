@@ -8,8 +8,8 @@ MD.MState {
     required property T.ItemDelegate item
 
     elevation: MD.Token.elevation.level0
-    textColor: root.ctx.textColor
-    backgroundColor: root.ctx.backgroundColor
+    textColor: root.ctx.color.on_surface
+    backgroundColor: "transparent"
     supportTextColor: root.ctx.color.on_surface_variant
     stateLayerColor: root.ctx.color.on_surface
     stateLayerOpacity: 0.0

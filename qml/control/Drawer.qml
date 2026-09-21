@@ -19,12 +19,12 @@ T.Drawer {
 
     enter: Transition {
         SmoothedAnimation {
-            velocity: 5
+            velocity: 800
         }
     }
     exit: Transition {
         SmoothedAnimation {
-            velocity: 5
+            velocity: 800
         }
     }
 

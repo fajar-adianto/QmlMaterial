@@ -58,7 +58,7 @@ MD.MState {
             return sizeToken.corner_size;
         }
         if (round) {
-            return item.background ? item.background.height / 2 : 20;
+            return (item.background && item.background.height > 0) ? item.background.height / 2 : 20;
         }
         return sizeToken.corner_size;
     }

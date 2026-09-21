@@ -32,7 +32,7 @@ MD.MState {
         if (root.item.down)
             return sizeToken.pressed_corner_size;
         if (root.isRound)
-            return item.background ? item.background.height / 2 : sizeToken.container_height / 2;
+            return (item.background && item.background.height > 0) ? item.background.height / 2 : sizeToken.container_height / 2;
         return sizeToken.corner_size;
     }
 
